@@ -3372,7 +3372,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		padding: 10em 0 4.75em 0 ;
+		padding: 4em 0 2em 0 ;
 	}
 
 		#banner .inner {
@@ -3675,7 +3675,7 @@ input, select, textarea {
 		}
 
 		.wrapper .inner {
-			padding: 3em 0 1em 0 ;
+			padding: 2em 0 1em 0 ;
 			margin: 0 auto;
 			width: 55em;
 		}
@@ -4148,3 +4148,54 @@ input, select, textarea {
 		}
 
 	}
+	
+body #banner {
+    display: block; 
+    height: auto;
+    min-height: 0;
+    padding: 1em 0 3em 0 !important; /* Adjusts padding */
+    align-items: flex-start; /* Stops vertical centering */
+}
+
+/* This tightens the space between the "My Projects" title and the project cards */
+.wrapper h2.major, .wrapper h3.major {
+    margin-bottom: 0.5em; /* Reduces space below the titles */
+}
+
+.wrapper {
+    margin: 2 !important;
+}
+
+.wrapper .inner {
+    padding-top: 1em !important;
+}
+
+#banner .inner,
+.wrapper .inner,
+#footer .inner {
+    width: 90% !important; /* Changes fixed width to a percentage */
+    max-width: 55em;      /* Keeps the original max width for large screens */
+}
+
+/* 1. This makes the project article a flex container */
+.features article {
+    display: flex;         /* Aligns items in a row */
+    flex-wrap: wrap;       /* Allows items to wrap to the next line */
+    align-content: flex-start; /* Aligns content to the top */
+    padding: 2em;          /* Adjusts overall padding */
+}
+
+/* 2. This reduces the image size and centers it */
+.features article .image {
+    width: 40%;            /* Makes the image container smaller */
+    margin: 0 auto 1.5em auto; /* Centers the image and adds space below */
+}
+
+/* 3. This ensures the text content takes up the full width below the image */
+.features article h3,
+.features article ul {
+    width: 100%;           /* Makes title and description full-width */
+}
+
+
+	
