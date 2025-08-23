@@ -4197,5 +4197,9 @@ body #banner {
     width: 100%;           /* Makes title and description full-width */
 }
 
+#ProjectBrawler .image {
+	width: 100% !important; /* Specific adjustment for Project Brawler image */
+}
+
 
 	
