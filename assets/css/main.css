@@ -4205,4 +4205,8 @@ body #banner {
 	width: 100% !important; /* Specific adjustment for Shards of Kalia gif */
 }
 
+#Level .image {
+	width: 100% !important; /* Specific adjustment for Level gif */
+}
+
 	
