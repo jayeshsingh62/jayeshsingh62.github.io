@@ -4198,8 +4198,11 @@ body #banner {
 }
 
 #ProjectBrawler .image {
-	width: 100% !important; /* Specific adjustment for Project Brawler image */
+	width: 100% !important; /* Specific adjustment for Project Brawler gif */
 }
 
+#ShardsOfKalia .image {
+	width: 100% !important; /* Specific adjustment for Shards of Kalia gif */
+}
 
 	
