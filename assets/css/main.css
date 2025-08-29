@@ -4213,58 +4213,68 @@ body #banner {
 	width: 100% !important; /* Specific adjustment for Feed The Animals gif */
 }
 
-/* --- FINAL HEADER ALIGNMENT STYLES --- */
+/* --- FINAL CONSOLIDATED HEADER STYLES --- */
 
-/*
-   This is the key fix. We create a shared class for all main
-   content sections to ensure they have the same width and centering.
-*/
-.content-container {
-    width: 90%;
-    max-width: 55em; /* This matches the width of your project/skills sections */
-    margin: 0 auto;  /* This centers the container on the page */
+/* 1. Main Header Overrides */
+#header {
+    height: auto !important;
+    line-height: normal !important;
+    padding: 1em 0 !important;
 }
 
-/* Apply the container styles to the header */
-#portfolio-header {
+/* 2. Alignment Container */
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3em 0; /* Vertical spacing */
+    width: 90%;
+    max-width: 55em;
+    margin: 0 auto;
 }
 
-/* Styling for the left side of the header */
-.header-left h1 {
-    font-size: 2.5em;
-    margin: 0;
+/* 3. Header Text Styling (Visible on load) */
+#header.alt h1 {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+#header h1 {
+    font-size: 1.5em !important;
+    padding: 0 !important;
+    border: none !important;
+    line-height: 1.2 !important; /* Prevents text from being too tall */
+}
+#header h1 a {
+    border: none !important;
+}
+/* Prevents template from hiding the custom content */
+#header nav {
+    display: none !important;
 }
 
-.header-left p {
-    font-size: 1.2em;
-    margin: 0;
-    opacity: 0.8; /* Makes "Gameplay Programmer" slightly less prominent */
-}
 
-/* Styling for the resume button */
+/* 4. Resume Button Styling */
 .resume-button {
-    padding: 0.6em 1.2em;
-    border: 2px solid white;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 5px;
-    color: white;
+    color: #ffffff !important;
     text-decoration: none;
-    font-weight: bold;
+    font-family: Raleway, Helvetica, sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
     white-space: nowrap;
 }
-
 .resume-button:hover {
-    background-color: white;
-    color: #2e3141;
+    background-color: #ffffff;
+    color: #2e3141 !important;
 }
 
-#portfolio-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-	background-color: rgba(53, 56, 73, 0.95);
+/* 5. Banner Cleanup */
+#banner {
+    padding-top: 5em;
 }
+
 	
