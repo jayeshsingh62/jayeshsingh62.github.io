@@ -4213,4 +4213,68 @@ body #banner {
 	width: 100% !important; /* Specific adjustment for Feed The Animals gif */
 }
 
+/* --- FINAL CONSOLIDATED HEADER STYLES --- */
+
+/* 1. Main Header Overrides */
+#header {
+    height: auto !important;
+    line-height: normal !important;
+    padding: 1em 0 !important;
+}
+
+/* 2. Alignment Container */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 55em;
+    margin: 0 auto;
+}
+
+/* 3. Header Text Styling (Visible on load) */
+#header.alt h1 {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+#header h1 {
+    font-size: 1.5em !important;
+    padding: 0 !important;
+    border: none !important;
+    line-height: 1.2 !important; /* Prevents text from being too tall */
+}
+#header h1 a {
+    border: none !important;
+}
+/* Prevents template from hiding the custom content */
+#header nav {
+    display: none !important;
+}
+
+
+/* 4. Resume Button Styling */
+.resume-button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    color: #ffffff !important;
+    text-decoration: none;
+    font-family: Raleway, Helvetica, sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    white-space: nowrap;
+}
+.resume-button:hover {
+    background-color: #ffffff;
+    color: #2e3141 !important;
+}
+
+/* 5. Banner Cleanup */
+#banner {
+    padding-top: 5em;
+}
+
 	
