@@ -4213,4 +4213,58 @@ body #banner {
 	width: 100% !important; /* Specific adjustment for Feed The Animals gif */
 }
 
+/* --- FINAL HEADER ALIGNMENT STYLES --- */
+
+/*
+   This is the key fix. We create a shared class for all main
+   content sections to ensure they have the same width and centering.
+*/
+.content-container {
+    width: 90%;
+    max-width: 55em; /* This matches the width of your project/skills sections */
+    margin: 0 auto;  /* This centers the container on the page */
+}
+
+/* Apply the container styles to the header */
+#portfolio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 0; /* Vertical spacing */
+}
+
+/* Styling for the left side of the header */
+.header-left h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.header-left p {
+    font-size: 1.2em;
+    margin: 0;
+    opacity: 0.8; /* Makes "Gameplay Programmer" slightly less prominent */
+}
+
+/* Styling for the resume button */
+.resume-button {
+    padding: 0.6em 1.2em;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.resume-button:hover {
+    background-color: white;
+    color: #2e3141;
+}
+
+#portfolio-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+	background-color: rgba(53, 56, 73, 0.95);
+}
 	
