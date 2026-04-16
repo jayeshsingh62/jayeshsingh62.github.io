@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git check-attr:*)",
+      "Bash(git lfs:*)",
+      "Bash(gh api:*)",
+      "Bash(curl -s https://api.github.com/repos/jayeshsingh62/jayeshsingh62.github.io/pages)",
+      "Bash(curl -sI https://jayeshsingh62.github.io/)",
+      "Bash(curl -s https://jayeshsingh62.github.io/)"
+    ]
+  }
+}
