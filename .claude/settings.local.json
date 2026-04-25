@@ -6,7 +6,15 @@
       "Bash(gh api:*)",
       "Bash(curl -s https://api.github.com/repos/jayeshsingh62/jayeshsingh62.github.io/pages)",
       "Bash(curl -sI https://jayeshsingh62.github.io/)",
-      "Bash(curl -s https://jayeshsingh62.github.io/)"
+      "Bash(curl -s https://jayeshsingh62.github.io/)",
+      "Bash(ls -la .github)",
+      "Bash(ls -la CNAME)",
+      "Bash(ls deploy*)",
+      "Bash(gh run *)",
+      "WebFetch(domain:jayeshsingh62.github.io)",
+      "Bash(curl -s -H \"Cache-Control: no-cache\" \"https://jayeshsingh62.github.io/?nocache=$\\(date +%s\\)\")",
+      "Bash(curl -sI \"https://jayeshsingh62.github.io/index.html\")",
+      "Bash(curl -s \"https://jayeshsingh62.github.io/index.html?v=$\\(date +%s%N\\)\" -H \"Pragma: no-cache\" -H \"Cache-Control: no-cache, no-store\")"
     ]
   }
 }
