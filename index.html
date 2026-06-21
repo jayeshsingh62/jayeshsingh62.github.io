@@ -1,164 +1,370 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
-		<title>My Portfolio</title>
+		<title>Jayesh Singh — Gameplay &amp; Network Programmer</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Jayesh Singh — Gameplay &amp; Network Programmer. Building combat systems, AI, and multiplayer netcode in Unreal Engine 5 and Unity." />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<body>
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
-
-    			<header id="header" class="alt">
-        			<div class="header-container">
-            			<div class="header-left">
-                			<h1><a href="index.html">JAYESH SINGH</a></h1>
-                			<p>Gameplay Programmer</p>
-            			</div>
-            			<div class="header-right">
-                			<a href="documents/Jayesh_Kumar_Singh_Resume.pdf" class="resume-button" target="_blank">Resume</a>
-            			</div>
-        			</div>
-   				</header>
-
-    			<section id="banner">
-        			<div class="inner">
-            		</div>
-    			</section>
-
-    			<section id="wrapper">
-        ...
-    			</section>
-
+		<!-- Header / Nav -->
+		<header class="site-header" id="siteHeader">
+			<div class="nav-inner">
+				<a href="#top" class="brand">
+					<span class="monogram">JS</span>
+					<span class="brand-text">
+						<span class="brand-name">Jayesh Singh</span>
+						<span class="brand-role">Gameplay Programmer</span>
+					</span>
+				</a>
+				<nav>
+					<ul class="nav-links">
+						<li class="nav-link"><a href="#projects">Projects</a></li>
+						<li class="nav-link"><a href="#skills">Skills</a></li>
+						<li class="nav-link"><a href="#experience">Experience</a></li>
+						<li class="nav-link"><a href="#education">Education</a></li>
+						<li><a href="documents/Jayesh_Kumar_Singh_Resume.pdf" class="resume-button" target="_blank" rel="noopener">Resume</a></li>
+					</ul>
+				</nav>
 			</div>
-				<!-- Wrapper -->
-					<section id="wrapper">
+		</header>
 
-						<!-- Eight -->
-							<section id="four" class="wrapper alt style1">
-								<div class="inner">
-									<h2 class="major">My Projects</h2>
-									<p>A selection of my work:</p>
-									<section class="features">
-										<article id ="ProjectBrawler">
-											<a class="image"><img src="images/ProjectBrawlerNew.gif" alt="A demo of the project" /></a>
-											<h3 class="major">Project: Brawler</h3>
-											<ul>
-        									<li>Engineered a versatile 3D character controller in C++ with locomotion features including walking and sprinting, integrated with a Blueprint Animation State Machine for fluid movement.</li>
-        									<li>Architected a C++ based, data-driven melee combat system supporting multi-stage punch and kick combos, handling input buffering and sequence validation to ensure responsive attacks.</li>
-       										<li>Implemented dynamic gameplay animations by triggering Animation Montages from C++ for evasive dodges and context-sensitive enemy hit reactions, providing clear and impactful combat feedback.</li>
-											<li>Designed a modular AI system in C++ using Behavior Trees to govern dynamic enemy behavior, from idle patrols to intelligent combat engagement.</li>
-											<li>Enriched combat with strategic AI mechanics, including a token system to manage enemy aggression and a posture system that rewards players with stun windows for high-impact finishers.</li>
-    										</ul>
-										</article>
-										<article id ="SpellCodeSlingerZ">
-											<a class="image" href="https://store.steampowered.com/app/4500000/Spell_Code_SlingerZ/">
-												<img src="images/SpellCodeSlingerZ.gif" alt="Spell Code SlingerZ" />
-											</a>
-											<a href="https://store.steampowered.com/app/4500000/Spell_Code_SlingerZ/" style="text-decoration:none; color:inherit;">
-												<h3 class="major">Spell Code SlingerZ (Wishlist on Steam)</h3>
-											</a>
-											<ul>
-											<li><strong>Role: Networking & Gameplay Programmer</strong></li>
-        									<li>Architected a peer-to-peer networking foundation for a 2-4 player brawler, utilizing Facepunch.Steamworks for Steam API integration and Bestonet to implement rollback netcode for frame-accurate synchronization.</li>
-        									<li>Collaborated within a cross-functional team of five over a multi-month development cycle, utilizing version control to integrate gameplay systems and maintain a stable build.</li>
-    										</ul>
-										</article>
-										<article id ="ShardsOfKalia">
-											<a class="image"><img src="images/Shards Of Kalia.gif" alt="Gameplay of Shards of Kalia" /></a>
-											<h3 class="major">Shards of Kalia</h3>
-											<ul>
-											<li><strong>Role: AI Programmer</strong></li>
-        									<li>A 2D local co-op game, I designed and implemented enemy behaviors using State Machines to create challenging and varied encounter patterns.</li>
-        									<li>Collaborated on integrating UI elements and sound effects to enhance gameplay feedback.</li>
-											</ul>
-										</article>
-										<article id ="FeedTheAnimals">
-											<a class="image"><img src="images/FeedTheAnimals.gif" alt="" /></a>
-											<h3 class="major">Feed The Animals</h3>
-											<ul>
-        									<li>Developed a top-down arcade game in Unity and C#, focusing on efficient management of a large number of game objects.</li>
-        									<li>Implemented an Object Pooling system to handle hundreds of concurrent projectiles and enemies, boosting overall performance by 30%.</li>
-											</ul>
-										</article>
-									</section>
-								</div>
-							</section>
+		<!-- Hero -->
+		<section class="hero" id="top">
+			<div class="section-wrap">
+				<div class="hero-status reveal">
+					<span class="dot"></span> Rochester, NY · MS Game Design &amp; Development @ RIT
+				</div>
+				<h1 class="reveal">Jayesh <span class="gradient-text">Singh</span></h1>
+				<p class="hero-role reveal">Gameplay &amp; Network Programmer</p>
+				<p class="hero-intro reveal">
+					I build <strong>combat systems, AI, and character controllers</strong> in Unreal Engine&nbsp;5 with C++,
+					and engineer <strong>multiplayer netcode</strong> in Unity. Currently a Network &amp; Gameplay Programmer
+					at BitForwardGames, shipping <strong>Spell Code SlingerZ</strong> on Steam.
+				</p>
+				<div class="hero-actions reveal">
+					<a href="#projects" class="btn btn-primary">View Projects</a>
+					<a href="documents/Jayesh_Kumar_Singh_Resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Download Resume</a>
+					<div class="hero-socials">
+						<a href="https://github.com/jayeshsingh62" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+						<a href="https://www.linkedin.com/in/jayesh-singh-6b61651b1/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+						<a href="mailto:jayeshsingh62@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+					</div>
+				</div>
+				<div class="hero-stats reveal">
+					<div class="stat"><span class="num">4.0</span><span class="label">GPA · MS Game Design, RIT</span></div>
+					<div class="stat"><span class="num">6<span>+</span></span><span class="label">Shipped &amp; in-dev projects</span></div>
+					<div class="stat"><span class="num">UE5 · Unity</span><span class="label">Primary engines</span></div>
+					<div class="stat"><span class="num">Steam</span><span class="label">Title live for wishlist</span></div>
+				</div>
+			</div>
+			<a href="#projects" class="scroll-cue" aria-label="Scroll to projects">
+				<span class="mouse"></span>
+				Scroll
+			</a>
+		</section>
 
-						<!-- Eight -->
-							<section id="four" class="wrapper alt style1">
-								<div class="inner">
-									<h2 class="major">Skills Summary</h2>
-									<p>These are the skills that i've acquired over the past years:</p>
-									<section class="features">
-										<article>
-											<a class="image"><img src="images/C.png" alt="" /></a>
-											<h3 class="major">C</h3>
-											<p>A foundational language that provided me with a deep understanding of memory management and core programming principles.</p>
-										</article>
-										<article>
-											<a class="image"><img src="images/C++.png" alt="" /></a>
-											<h3 class="major">C++</h3>
-											<p>My primary language for Unreal Engine development, used to architect and implement core gameplay systems, character controllers, and combat mechanics.</p>
-										</article>
-										<article>
-											<a class="image"><img src="images/C-Sharp.png" alt="" /></a>
-											<h3 class="major">C#</h3>
-											<p>Proficient in C# for Unity development, creating clean, efficient, and maintainable scripts for game logic, UI, and player mechanics.</p>
-										</article>
-										<article>
-											<a class="image"><img src="images/GIT-logo.png" alt="" /></a>
-											<h3 class="major">GIT</h3>
-											<p>Experienced with Git for version control, managing project repositories, and collaborating with teams.</p>
-										</article>
-										<article>
-											<a class="image"><img src="images/Unity.png" alt="" /></a>
-											<h3 class="major">Unity</h3>
-											<p>Experienced in developing games in Unity, with a focus on 2D/3D gameplay, performance optimization, and scripting in C#.</p>
-										</article>
-										<article>
-											<a class="image"><img src="images/UE-Logo.png" alt="" /></a>
-											<h3 class="major">Unreal Engine</h3>
-											<p>Skilled in Unreal Engine 4 & 5, specializing in C++ gameplay programming, Blueprint/C++ integration, and building animation and combat systems.</p>
-										</article>
-										<article>
-											<a class="image"><img src="images/VR_Logo.png" alt="" /></a>
-											<h3 class="major">Virtual Reality (VR)</h3>
-											<p>A technology that I wanted to venture into to explore the reach of development on newer technologies.</p>
-										</article>
-										<article>
-											<a class="image"><img src="images/AR_Logo.png" alt="" /></a>
-											<h3 class="major">Augmented Reality (AR)</h3>
-											<p>Another newer technology that I wanted to explore and develop for. </p>
-										</article>
-									</section>
-								</div>
-							</section>
-					</section>
+		<!-- Projects -->
+		<section class="section" id="projects">
+			<div class="section-wrap">
+				<p class="eyebrow reveal">Selected work</p>
+				<h2 class="section-title reveal">Projects</h2>
+				<p class="section-lead reveal">Gameplay systems, AI, and multiplayer — shipped, in development, and prototyped.</p>
 
-				<!-- Footer -->
-					<section id="footer">
-						<div class="inner">
-							<h2 class="major">Get in touch</h2>
-							<p>Feel free to reach out or view my work.</p>
-							<ul class="contact">
-								<li class="icon solid fa-envelope"><a href = "mailto: jayeshsingh62@gmail.com">jayeshsingh62@gmail.com</a></li>
-								<li class="icon brands fa-github"><a href="https://github.com/jayeshsingh62">github.com/jayeshsingh62</a></li>
-								<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/jayesh-singh-6b61651b1/">linkedin.com/in/jayesh-singh</a></li>
-							</ul>
+				<div class="projects-grid">
+
+					<!-- Project: Brawler -->
+					<article class="project-card reveal">
+						<div class="project-media">
+							<video poster="images/ProjectBrawler-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Project Brawler combat demo">
+								<source src="images/ProjectBrawler.mp4" type="video/mp4" />
+							</video>
+							<span class="media-badge">In Development</span>
 						</div>
-					</section>
+						<div class="project-body">
+							<h3>Project: Brawler</h3>
+							<p class="project-role">Solo · Unreal Engine 5</p>
+							<ul>
+								<li>Data-driven C++ melee combat system with multi-stage combos, input buffering, and sequence validation for responsive attacks.</li>
+								<li>Versatile 3D character controller (walk, sprint, dodge) wired to a Blueprint animation state machine, with Animation Montages triggered from C++ for dodges and hit reactions.</li>
+								<li>Modular enemy AI via Behavior Trees, with a token-based aggression system and a posture system that rewards stun-window finishers.</li>
+							</ul>
+							<div class="tech-tags">
+								<span>Unreal Engine 5</span><span>C++</span><span>Combat</span><span>AI</span><span>Animation</span>
+							</div>
+						</div>
+					</article>
+
+					<!-- Spell Code SlingerZ -->
+					<article class="project-card reveal">
+						<div class="project-media">
+							<a href="https://store.steampowered.com/app/4500000/Spell_Code_SlingerZ/" target="_blank" rel="noopener">
+								<video poster="images/SpellCodeSlingerZ-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Spell Code SlingerZ gameplay">
+									<source src="images/SpellCodeSlingerZ.mp4" type="video/mp4" />
+								</video>
+							</a>
+							<span class="media-badge">On Steam</span>
+						</div>
+						<div class="project-body">
+							<h3>Spell Code SlingerZ</h3>
+							<p class="project-role">Networking &amp; Gameplay · BitForwardGames</p>
+							<ul>
+								<li>Architected a peer-to-peer networking foundation for a 2–4 player brawler using Facepunch.Steamworks, with Bestonet rollback netcode for frame-accurate synchronization.</li>
+								<li>Collaborated across a 5-person team over a multi-month cycle, integrating gameplay systems behind version control to keep builds stable.</li>
+							</ul>
+							<div class="tech-tags">
+								<span>Networking</span><span>Rollback Netcode</span><span>Steamworks</span><span>Multiplayer</span>
+							</div>
+							<div class="project-links">
+								<a class="steam" href="https://store.steampowered.com/app/4500000/Spell_Code_SlingerZ/" target="_blank" rel="noopener"><i class="fab fa-steam"></i> Wishlist on Steam</a>
+							</div>
+						</div>
+					</article>
+
+					<!-- Shards of Kalia -->
+					<article class="project-card reveal">
+						<div class="project-media">
+							<video poster="images/ShardsOfKalia-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Shards of Kalia gameplay">
+								<source src="images/ShardsOfKalia.mp4" type="video/mp4" />
+							</video>
+						</div>
+						<div class="project-body">
+							<h3>Shards of Kalia</h3>
+							<p class="project-role">AI Programmer · Unity</p>
+							<ul>
+								<li>Designed and implemented enemy behaviors with state machines for a 2D local co-op game, creating varied, challenging encounter patterns.</li>
+								<li>Integrated UI elements and sound effects to sharpen gameplay feedback.</li>
+							</ul>
+							<div class="tech-tags">
+								<span>Unity</span><span>C#</span><span>AI</span><span>2D Co-op</span>
+							</div>
+						</div>
+					</article>
+
+					<!-- Feed the Animals -->
+					<article class="project-card reveal">
+						<div class="project-media">
+							<video poster="images/FeedTheAnimals-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Feed the Animals gameplay">
+								<source src="images/FeedTheAnimals.mp4" type="video/mp4" />
+							</video>
+						</div>
+						<div class="project-body">
+							<h3>Feed the Animals</h3>
+							<p class="project-role">Solo · Unity</p>
+							<ul>
+								<li>Top-down arcade shooter built in Unity &amp; C#, focused on efficiently managing large numbers of game objects.</li>
+								<li>Object pooling for hundreds of concurrent projectiles and enemies, boosting overall performance by ~30%.</li>
+							</ul>
+							<div class="tech-tags">
+								<span>Unity</span><span>C#</span><span>Object Pooling</span><span>Optimization</span>
+							</div>
+						</div>
+					</article>
+
+				</div>
 			</div>
+		</section>
+
+		<!-- Skills -->
+		<section class="section" id="skills">
+			<div class="section-wrap">
+				<p class="eyebrow reveal">Toolbox</p>
+				<h2 class="section-title reveal">Skills &amp; Technologies</h2>
+				<p class="section-lead reveal">The languages, engines, and concepts I reach for when building games.</p>
+
+				<div class="skills-groups">
+					<div class="skill-group reveal">
+						<h3>Languages</h3>
+						<div class="chip-row">
+							<span class="chip"><img src="images/C++.png" alt="" /> C++</span>
+							<span class="chip"><img src="images/C-Sharp.png" alt="" /> C#</span>
+							<span class="chip"><img src="images/C.png" alt="" /> C</span>
+							<span class="chip">Scripting</span>
+						</div>
+					</div>
+					<div class="skill-group reveal">
+						<h3>Engines &amp; APIs</h3>
+						<div class="chip-row">
+							<span class="chip"><img src="images/UE-Logo.png" alt="" /> Unreal Engine 5</span>
+							<span class="chip"><img src="images/UE-Logo.png" alt="" /> Unreal Engine 4</span>
+							<span class="chip"><img src="images/Unity.png" alt="" /> Unity</span>
+							<span class="chip">OpenGL</span>
+						</div>
+					</div>
+					<div class="skill-group reveal">
+						<h3>Tools &amp; Tech</h3>
+						<div class="chip-row">
+							<span class="chip"><img src="images/GIT-logo.png" alt="" /> Git</span>
+							<span class="chip">Perforce</span>
+							<span class="chip">Visual Studio</span>
+							<span class="chip"><img src="images/VR_Logo.png" alt="" /> VR · Oculus / OpenXR</span>
+							<span class="chip"><img src="images/AR_Logo.png" alt="" /> AR · ARCore</span>
+						</div>
+					</div>
+					<div class="skill-group reveal">
+						<h3>Concepts</h3>
+						<div class="chip-row">
+							<span class="chip">Gameplay Systems</span>
+							<span class="chip">AI Programming</span>
+							<span class="chip">OOP</span>
+							<span class="chip">Performance Optimization</span>
+							<span class="chip">UI/UX Implementation</span>
+							<span class="chip">Prototyping</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Experience -->
+		<section class="section" id="experience">
+			<div class="section-wrap">
+				<p class="eyebrow reveal">Where I've worked</p>
+				<h2 class="section-title reveal">Experience</h2>
+				<p class="section-lead reveal">From engine and gameplay programming to VR/AR and shipping multiplayer.</p>
+
+				<div class="timeline">
+					<div class="tl-item reveal">
+						<div class="tl-head">
+							<span class="tl-role">Network &amp; Gameplay Programmer</span>
+							<span class="tl-company">· BitForwardGames</span>
+							<span class="tl-date">Sep 2025 – Present · Rochester, NY</span>
+						</div>
+						<p class="tl-sub">Spell Code SlingerZ — available to wishlist on Steam</p>
+						<ul>
+							<li>Engineered a peer-to-peer networking architecture with custom rollback netcode for synchronized, low-latency multiplayer.</li>
+							<li>Integrated Facepunch.Steamworks for platform connectivity and matchmaking.</li>
+							<li>Managed version control and cross-discipline task delegation to keep builds stable and feature integration smooth.</li>
+						</ul>
+					</div>
+
+					<div class="tl-item reveal">
+						<div class="tl-head">
+							<span class="tl-role">Unity Developer (Freelance)</span>
+							<span class="tl-company">· A3ED</span>
+							<span class="tl-date">Mar 2023 – Jan 2024 · Remote</span>
+						</div>
+						<ul>
+							<li>Built an interactive VR training simulation in Unity with the Oculus SDK — a bulldozer model with 5 interactable components for inspection and disassembly to aid comprehension of complex machinery.</li>
+							<li>Created an AR experience powered by Google ARCore, placing animals at real-world locations using Cesium 3D maps and the Geospatial API.</li>
+						</ul>
+					</div>
+
+					<div class="tl-item reveal">
+						<div class="tl-head">
+							<span class="tl-role">Junior Intern Developer</span>
+							<span class="tl-company">· FanClash11 Fantasy</span>
+							<span class="tl-date">Oct 2021 – Nov 2021 · Remote</span>
+						</div>
+						<ul>
+							<li>Authored a technical design brief outlining core mechanics, engine requirements, and performance targets for a new mobile title.</li>
+							<li>Prototyped a responsive UI and menu system with Unity Scene Management, optimizing asset loading for level transitions under 10 seconds.</li>
+							<li>Implemented and profiled core C# gameplay to guarantee a consistent 30 FPS on mobile hardware.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Education -->
+		<section class="section" id="education">
+			<div class="section-wrap">
+				<p class="eyebrow reveal">Academics</p>
+				<h2 class="section-title reveal">Education</h2>
+
+				<div class="edu-grid">
+					<div class="edu-card reveal">
+						<div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+						<div>
+							<h3>Rochester Institute of Technology</h3>
+							<p class="edu-degree">MS — Game Design &amp; Development</p>
+							<div class="edu-meta">
+								<span class="gpa">GPA 4.0</span>
+								<span class="edu-date">2024 – 2026 · Rochester, NY</span>
+							</div>
+							<p class="edu-extra">Game Dev Processes · Game Design · AI Programming · Game Graphics Programming · Game Engine Development</p>
+						</div>
+					</div>
+
+					<div class="edu-card reveal">
+						<div class="edu-icon"><i class="fas fa-university"></i></div>
+						<div>
+							<h3>Bharati Vidyapeeth's College of Engineering, GGSIPU</h3>
+							<p class="edu-degree">B.Tech — Information Technology</p>
+							<div class="edu-meta">
+								<span class="gpa">GPA 8.37</span>
+								<span class="edu-date">2018 – 2022 · Delhi, India</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact / Footer -->
+		<footer class="site-footer" id="contact">
+			<div class="section-wrap">
+				<p class="eyebrow reveal" style="justify-content:center;">Get in touch</p>
+				<h2 class="section-title reveal">Let's build something</h2>
+				<p class="section-lead reveal">Open to gameplay and engine programming opportunities — feel free to reach out or view my work.</p>
+
+				<div class="contact-methods">
+					<a class="contact-card reveal" href="mailto:jayeshsingh62@gmail.com">
+						<i class="fas fa-envelope"></i>
+						<span><span class="c-label">Email</span><span class="c-value">jayeshsingh62@gmail.com</span></span>
+					</a>
+					<a class="contact-card reveal" href="https://github.com/jayeshsingh62" target="_blank" rel="noopener">
+						<i class="fab fa-github"></i>
+						<span><span class="c-label">GitHub</span><span class="c-value">github.com/jayeshsingh62</span></span>
+					</a>
+					<a class="contact-card reveal" href="https://www.linkedin.com/in/jayesh-singh-6b61651b1/" target="_blank" rel="noopener">
+						<i class="fab fa-linkedin-in"></i>
+						<span><span class="c-label">LinkedIn</span><span class="c-value">linkedin.com/in/jayesh-singh</span></span>
+					</a>
+				</div>
+
+				<div class="footer-bottom">
+					&copy; <span id="year">2026</span> Jayesh Singh · Built with too much C++ and caffeine.
+				</div>
+			</div>
+		</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script>
+			// Sticky header state
+			(function () {
+				var header = document.getElementById('siteHeader');
+				var onScroll = function () {
+					if (window.scrollY > 24) header.classList.add('scrolled');
+					else header.classList.remove('scrolled');
+				};
+				window.addEventListener('scroll', onScroll, { passive: true });
+				onScroll();
+
+				// Reveal on scroll
+				var items = document.querySelectorAll('.reveal');
+				if ('IntersectionObserver' in window) {
+					var io = new IntersectionObserver(function (entries) {
+						entries.forEach(function (e) {
+							if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+						});
+					}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+					items.forEach(function (el) { io.observe(el); });
+				} else {
+					items.forEach(function (el) { el.classList.add('in'); });
+				}
+
+				// Current year
+				document.getElementById('year').textContent = new Date().getFullYear();
+			})();
+		</script>
 	</body>
 </html>
