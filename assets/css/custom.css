@@ -235,10 +235,9 @@ section { position: relative; }
 
 .hero {
 	position: relative;
-	min-height: 100vh;
 	display: flex;
-	align-items: center;
-	padding: 8rem 0 5rem;
+	align-items: flex-start;
+	padding: 9rem 0 5rem;
 	overflow: hidden;
 }
 .hero::after { /* subtle grid */
@@ -295,7 +294,7 @@ section { position: relative; }
 	margin: 0 0 1.4rem 0;
 }
 .hero p.hero-intro {
-	max-width: 56ch;
+	max-width: none;
 	font-size: clamp(1.02rem, 1.6vw, 1.18rem);
 	line-height: 1.7;
 	color: var(--muted);
@@ -347,33 +346,6 @@ section { position: relative; }
 	font-size: 0.82rem;
 	color: var(--muted);
 }
-
-.scroll-cue {
-	position: absolute;
-	left: 50%; bottom: 1.6rem;
-	transform: translateX(-50%);
-	color: var(--muted-2);
-	font-size: 0.7rem;
-	letter-spacing: 0.2em;
-	text-transform: uppercase;
-	display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
-	z-index: 1;
-}
-.scroll-cue .mouse {
-	width: 22px; height: 34px;
-	border: 2px solid var(--border-strong);
-	border-radius: 12px;
-	position: relative;
-}
-.scroll-cue .mouse::after {
-	content: "";
-	position: absolute; left: 50%; top: 6px;
-	width: 3px; height: 7px; border-radius: 3px;
-	background: var(--accent-2);
-	transform: translateX(-50%);
-	animation: scrolldot 1.8s infinite;
-}
-@keyframes scrolldot { 0%{opacity:0;transform:translate(-50%,0)} 40%{opacity:1} 80%{opacity:0;transform:translate(-50%,10px)} 100%{opacity:0} }
 
 /* =========================================================================
    Generic section rhythm
@@ -712,7 +684,7 @@ section { position: relative; }
 @media (prefers-reduced-motion: reduce) {
 	html { scroll-behavior: auto; }
 	.reveal { opacity: 1; transform: none; transition: none; }
-	.hero-status .dot, .scroll-cue .mouse::after { animation: none; }
+	.hero-status .dot { animation: none; }
 }
 
 /* =========================================================================
@@ -723,7 +695,6 @@ section { position: relative; }
 	.nav-links .nav-link { display: none; }
 	.brand .brand-role { display: none; }
 	.hero { min-height: auto; padding: 7rem 0 4rem; }
-	.scroll-cue { display: none; }
 	.tl-date { margin-left: 0; width: 100%; }
 }
 
